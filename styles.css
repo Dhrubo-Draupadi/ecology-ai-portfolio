@@ -1,0 +1,89 @@
+/* css styles */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+.poem {
+  font-family: 'EB Garamond', serif;  /* You can change this to any poetic font */
+  font-size: 1.2em;                   /* Slightly larger than normal text */
+  line-height: 1.8;                   /* Gives breathing space between lines */
+  white-space: pre-line;             /* 🔥 PRESERVES paragraph breaks + line breaks */
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  padding: 1.2em;
+  background-color: #fdfaf5;         /* Soft ivory tone */
+  border-left: 4px solid #d8a47f;    /* Subtle warm tone on the side */
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);  /* Optional: gentle shadow */
+}
+
+/* Base body styling */
+body {
+  background-color: #f5f9f4;
+  font-family: 'EB Garamond', serif;
+  color: #2e3d25;
+  line-height: 1.7;
+  padding-bottom: 50px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #1b5e20;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Links */
+a {
+  color: #2a7ae2;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0d47a1;
+}
+
+/* Poem block */
+.poem {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2em;
+  line-height: 1.8;
+  white-space: pre-line;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  padding: 1.2em;
+  background-color: #f0f5ec;
+  border-left: 4px solid #7ca982;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Section blocks */
+.sim-section, .eco-section {
+  background-color: #eef7ee;
+  border-left: 5px solid #4a8c5f;
+  padding: 1.2em;
+  margin-top: 1.5em;
+  border-radius: 10px;
+}
+
+/* Optional image style */
+img {
+  border-radius: 10px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+
+/* Add gentle leaf-themed background watermark */
+body::after {
+  content: "";
+  background-image: url('Images/leaf-pattern.png'); /* Optional: upload a soft leaf watermark */
+  opacity: 0.05;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: -1;
+  background-repeat: repeat;
+}
